@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+
+  --color-rose: #E8365D;
+  --color-rose-light: #ffeef3;
+  --color-rose-muted: #f9c9d6;
+  --color-ink: #1a1a2e;
+  --color-ink-soft: #4a4a6a;
+  --color-ink-muted: #9898b0;
+  --color-surface: #ffffff;
+  --color-surface-2: #f7f7fb;
+  --color-surface-3: #f0f0f8;
+  --color-green: #1DAA6B;
+  --color-green-light: #e8f8f1;
+  --color-amber: #F59B00;
+  --color-amber-light: #fff8ec;
+  --color-blue: #1A73E8;
+  --color-blue-light: #e8f1fd;
+  --color-border-custom: rgba(26,26,46,0.08);
+  --color-border-soft: rgba(26,26,46,0.05);
+
+  --radius-xl: 18px;
+  --radius-2xl: 20px;
+  --radius-3xl: 32px;
+}
+
+@layer base {
+  body {
+    @apply bg-[#dddde8] text-ink font-sans;
+  }
+}
+
+/* Custom scrollbar hiding */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
